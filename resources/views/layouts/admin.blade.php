@@ -68,7 +68,7 @@
           </a>
         </li>
         <li class="pc-item">
-          <a href="../elements/bc_color.html" class="pc-link">
+          <a href='{{route("menus.index")}}'  class="pc-link">
             <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
             <span class="pc-mtext">Menu(navbar)</span>
           </a>

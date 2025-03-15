@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Setting;
+use App\Models\Menu;
 class WebsiteController extends Controller
 {
     /**
@@ -13,8 +14,8 @@ class WebsiteController extends Controller
     {
         //
         $setting = Setting::first();
-
-        return view("welcome",compact('setting'));
+        $allMenus = Menu::orderBy('order')->get();
+        return view("welcome",compact('setting','allMenus'));
 
     }
 }
